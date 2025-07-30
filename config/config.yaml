@@ -1,0 +1,13 @@
+log_file: logs/cleanup.log
+log_level: INFO
+cleanup_paths:
+  - /tmp/test_cleaner.dir
+  - /tmp/test_cleaner_file.txt
+dry_run: true
+extensions:
+  - .log
+  - .tmp
+  - .bak
+older_than_days: 7
+exclude:
+  - /tmp/do_not_delete.txt
